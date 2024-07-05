@@ -1,4 +1,4 @@
-<h1 align="center">React Mac Keyboard</h1>
+<h1 align="center">Svelte Mac Keyboard</h1>
 <p align="center">
   <a href="https://gitub.com/markjaquith/svelte-mac-keyboard">
     <img alt="svelte-mac-keyboard" src="https://user-images.githubusercontent.com/1680273/80699566-c2aad500-8b0e-11ea-8d37-7e5537949d73.png">
