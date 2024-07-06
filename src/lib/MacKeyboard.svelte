@@ -1,12 +1,12 @@
 <script lang="ts">
-import type { KeyCodeData, MacKeyBoardProps } from '$lib/types'
+import type { KeyCodeData } from '$lib/types'
 	
 	export let prefixCls: string = 'w-mac-keyboard'
 	export let className: string = ''
 	export let style: string = ''
 	export let keyCode: number[] = []
-	export let onMouseDown: ((e: MouseEvent, item: KeyCodeData) => void) | undefined
-	export let onMouseUp: ((e: MouseEvent, item: KeyCodeData) => void) | undefined
+	export let onMouseDown: ((e: MouseEvent, item: KeyCodeData) => void) | undefined = undefined
+	export let onMouseUp: ((e: MouseEvent, item: KeyCodeData) => void) | undefined = undefined
 
 	const keyCodeData: KeyCodeData[] = [
 		{ keycode: 27, name: ['esc'] },
