@@ -1,0 +1,22 @@
+name: Test
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - name: Install
+        run: bun i --frozen-lockfile
+      - name: Build
+        run: bun run build
+      - name: Install Playwright Browsers
+        run: bun run playwright install
+      - name: Unit Tests
+        run: bun run test:unit
+      - name: E2E Tests
+        run: bun run test:e2e
