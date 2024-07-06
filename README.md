@@ -35,7 +35,6 @@ type KeyCodeData = {
 }
 
 interface MacKeyBoardProps {
-  prefixCls?: string;
   className?: string;
   keyCode?: number[];
   onMouseDown?: (e: MouseEvent, item: KeyCodeData) => void;
@@ -48,17 +47,17 @@ interface MacKeyBoardProps {
 Runs the project in development mode.  
 
 ```bash
-npm run install
-npm run build
+bun run install
+bun run build
 
-npm run start
+bun run start
 ```
 
 Builds the app for production to the build folder.
 
 ```bash
-npm run build
-npm run doc
+bun run build
+bun run doc
 ```
 
 ## Contributors
